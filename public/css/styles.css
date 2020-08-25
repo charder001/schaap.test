@@ -40,12 +40,20 @@ nav >* {
     margin-right: 2em;
 }
 
-#imdbHeader-navDrawerOpen {
-    margin-top: .2em;
+
+#menu {
+    margin-bottom: .5em;
 }
+
 
 .ipc-button{
     color: white;
+
+}
+
+.ipc-icon {
+    position: relative;
+    top: .4em;
 }
 
 #title span {
