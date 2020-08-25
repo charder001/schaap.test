@@ -1,0 +1,70 @@
+body {
+    background-color: #000000;
+    color: white;
+    font-family: Roboto;
+    margin: 0;
+}
+
+main {
+    margin: 1em;
+}
+
+h2 {
+    color: #F5C518;
+}
+
+h3 {
+    font-size: 1em;
+    display: inline;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+nav {
+    height: 3em;
+    display: flex;
+    align-items: center;
+    background-color: #121212;
+}
+
+nav input {
+    width: 40%;
+    border-radius: 5px;
+}
+
+nav >* {
+    margin-right: 2em;
+}
+
+#imdbHeader-navDrawerOpen {
+    margin-top: .2em;
+}
+
+.ipc-button{
+    color: white;
+}
+
+#title span {
+    display: block;
+}
+
+.block {
+    background-color: #121212;
+    padding: .5em;
+    margin-bottom: 1em;
+}
+
+#information article {
+    margin-top: 1em;
+    padding-bottom: 1em;
+    border-bottom: 1px solid #232323;
+}
+
+#information article p {
+    display: inline;
+
+}
