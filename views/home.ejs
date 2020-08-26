@@ -75,17 +75,20 @@
 
   <main>
     <div class="topBanner">
-      <a href="#">Full cast and crew</a><span> | </span>
-      <a href="#">Trivia</a><span> | </span>
-      <a href="#">User reviews</a><span> | </span>
-      <a href="#">IMDbPro</a><span> | </span>
+      <div class="topBannerLinks">
+      <a href="#">Full cast and crew</a>
+      <a href="#">Trivia</a>
+      <a href="#">User reviews</a>
+      <a href="#">IMDbPro</a>
       <a href="#">More</a>
       <a href="#" id="share">SHARE</a>
-
+    </div>
       <div class="title">
-        <h1><%= movieInfo.Title %><span> (<%= movieInfo.Year %>)</span></h1>
+        <h1><%= movieInfo.Title %><span id="movieYear"> (<%= movieInfo.Year %>)</span></h1>
+        <div class="imdbRating">
         <p><%= movieInfo.Ratings[0].Value %></p>
         <p><%= movieInfo.imdbVotes %></p>
+      </div>
       </div>
     </div>
     <div class="trailer">
@@ -128,28 +131,26 @@
 
       <article>
         <h3>Rated: </h3>
-        <p><%= movieInfo.Rated %></p>
-      </article>
+        <p><%= movieInfo.Rated %></p><span> | </span>
 
-      <article>
         <h3>Released: </h3>
-        <p><%= movieInfo.Released %></p>
+        <p><%= movieInfo.Released %></p><span> | </span>
         <h3>Runtime: </h3>
-        <p><%= movieInfo.Runtime %></p>
+        <p><%= movieInfo.Runtime %></p><span> | </span>
         <h3>Genre: </h3>
         <p><%= movieInfo.Genre %></p>
       </article>
 
       <article>
         <h3>Director: </h3>
-        <p><%= movieInfo.Director %></p>
+        <p><%= movieInfo.Director %></p><span> | </span>
         <h3>Writer: </h3>
         <p><%= movieInfo.Writer %></p>
       </article>
 
       <article>
         <h3>Language: </h3>
-        <p><%= movieInfo.Language %></p>
+        <p><%= movieInfo.Language %></p><span> | </span>
         <h3>Country</h3>
         <p><%= movieInfo.Country %></p>
       </article>
@@ -157,7 +158,7 @@
 
       <article>
         <h3>imdbID</h3>
-        <p><%= movieInfo.imdbID %></p>
+        <p><%= movieInfo.imdbID %></p><span> | </span>
         <h3>Type: </h3>
         <p><%= movieInfo.Type %></p>
         <p><%= movieInfo.DVD %></p>
@@ -165,7 +166,7 @@
 
       <article>
         <h3>BoxOffice: </h3>
-        <p><%= movieInfo.BoxOffice %></p>
+        <p><%= movieInfo.BoxOffice %></p><span> | </span>
         <h3>Production: </h3>
         <p><%= movieInfo.Production %></p>
       </article>

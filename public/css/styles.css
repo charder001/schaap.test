@@ -79,8 +79,41 @@ nav>* {
     top: .4em;
 }
 
+.topBannerLinks {
+    margin: 0;
+    display: flex;
+}
+
+.topBannerLinks a {
+    margin-right: .5em;
+    padding-right: .5em;
+    border-right: 1px solid white;
+}
+
+.topBannerLinks a:last-of-type {
+    border: none;
+}
+
 #title span {
     display: block;
+}
+
+#movieYear {
+    display: block;
+}
+
+.imdbRating {
+    margin: 2.2em 1em 0 auto;
+    text-align: center;
+}
+
+.imdbRating p {
+    margin-bottom: 0;
+}
+
+.imdbRating p:last-of-type {
+    margin: 0;
+    font-size: .7em;
 }
 
 .trailer, .poster {
@@ -176,12 +209,17 @@ main {
 }
 
 #share {
-    text-align: right;
+    margin-left: auto;
 }
 
 .title {
     grid-area: title;
     margin-left: 0;
+    display: flex;
+}
+
+.title h1 {
+    margin: .5em 0 0 0;
 }
 
 .trailer {
