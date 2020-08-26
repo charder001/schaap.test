@@ -72,6 +72,15 @@ nav>* {
     display: block;
 }
 
+.trailer, .poster {
+    height: 20em;
+}
+
+.poster img {
+    height: 100%;
+    object-fit: cover;
+}
+
 .trailer img {
     object-fit: cover;
     height: 100%;
@@ -84,8 +93,9 @@ nav>* {
 }
 
 
-#reviewSites{
+#reviewSites {
     display: flex;
+    margin-left: 0;
 }
 
 
@@ -113,6 +123,17 @@ nav>* {
 .block-color {
     background-color: #121212;
 }
+
+.block h2, .block p {
+    margin: 0.2em 0 0.2em 0;
+}
+
+
+
+.right h2 {
+    color: white;
+}
+
 
 #information article {
     margin-top: 1em;
@@ -178,16 +199,7 @@ main {
 
 .right {
     grid-area: right;
+    margin-right: 1em;
 }
 
-/* main * { 
-    border: 1px solid red;
-    position: relative;
-   }
-   
-main *:after { 
-    content:attr(class);
-    position: absolute;
-    top: 0;
-    left: 0;
-   } */
+
