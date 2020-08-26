@@ -2,12 +2,14 @@
 <html>
 
 <head>
+  <!-- load movie data into page title -->
   <title><%= movieInfo.Title %>(<%= movieInfo.Year %>) - IMDb</title>
   <link rel="stylesheet" type="text/css" href="/css/styles.css">
 </head>
 
 <body>
   <nav>
+    <!-- imdb logo -->
     <svg id="home_img" class="ipc-logo" xmlns="http://www.w3.org/2000/svg" width="64" height="32" viewBox="0 0 64 32"
       version="1.1">
       <g fill="#F5C518">
@@ -26,6 +28,7 @@
         </path>
       </g>
     </svg>
+    <!-- hamburger menu icon -->
     <a href="#" id="menu">
       <label aria-label="Open Navigation Drawer" role="button"
         class="ipc-icon-button y0N-5Z7J0DtTY5cNWNjZ0 sc-kGXeez eGXWKr mobile ipc-icon-button--baseAlt ipc-icon-button--onBase"
@@ -38,8 +41,10 @@
           </path>
         </svg></label>
     </a>
+    <!-- search bar -->
     <input type="text">
     <img src="/img/search.png" alt="search" id="search">
+    <!-- imdb pro logo -->
     <a aria-label="Go To IMDb Pro"
       class="ipc-button ipc-button--single-padding ipc-button--default-height ipc-button--core-baseAlt ipc-button--theme-baseAlt ipc-button--on-textPrimary ipc-text-button navbar__flyout__text-button-after-mobile navbar__imdb-pro--toggle"
       tabindex="0"
@@ -74,23 +79,26 @@
   </nav>
 
   <main>
+    <!-- top banner above movie title -->
     <div class="topBanner">
       <div class="topBannerLinks">
-      <a href="#">Full cast and crew</a>
-      <a href="#">Trivia</a>
-      <a href="#">User reviews</a>
-      <a href="#">IMDbPro</a>
-      <a href="#">More</a>
-      <a href="#" id="share">SHARE</a>
-    </div>
+        <a href="#">Full cast and crew</a>
+        <a href="#">Trivia</a>
+        <a href="#">User reviews</a>
+        <a href="#">IMDbPro</a>
+        <a href="#">More</a>
+        <a href="#" id="share">SHARE</a>
+      </div>
+      <!-- movie title and rating -->
       <div class="title">
         <h1><%= movieInfo.Title %><span id="movieYear"> (<%= movieInfo.Year %>)</span></h1>
         <div class="imdbRating">
-        <p><%= movieInfo.Ratings[0].Value %></p>
-        <p><%= movieInfo.imdbVotes %></p>
-      </div>
+          <p><%= movieInfo.Ratings[0].Value %></p>
+          <p><%= movieInfo.imdbVotes %></p>
+        </div>
       </div>
     </div>
+    <!-- trailer and posters -->
     <div class="trailer">
       <img src="/img/trailerThumb.jpg" alt="<%= movieInfo.Title %> trailer thumbnail">
     </div>
@@ -98,6 +106,7 @@
       <img src="<%= movieInfo.Poster %>" alt="<%= movieInfo.Title %> poster">
     </div>
 
+    <!-- ratings -->
     <section class="block rating">
       <h2>Rating</h2>
       <section id="reviewSites">
@@ -116,12 +125,13 @@
       </section>
     </section>
 
+    <!-- awards -->
     <section class="block awards">
       <h2>Awards</h2>
       <p><%= movieInfo.Awards %></p>
     </section>
 
-
+    <!-- info -->
     <section id="information" class="block information">
       <h2>Information</h2>
       <article>
@@ -172,11 +182,13 @@
       </article>
     </section>
 
+    <!-- cast -->
     <section class="block cast">
       <h2>Cast</h2>
       <p><%= movieInfo.Actors %></p>
     </section>
 
+    <!-- sidebar -->
     <div class="right block">
       <h2>Dwayne "The Rock" Johnson</h2>
       <img src="/img/dwayneJohnson.jpg" alt="Dwayne Johnson">
