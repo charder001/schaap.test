@@ -203,3 +203,31 @@ main {
 }
 
 
+@media(max-width: 860px) {
+    .right {
+        display: none;
+    }
+    main {
+
+        grid-template-columns: 1fr 1fr 1fr;
+
+        grid-template-areas: "topBanner topBanner topBanner""title title title""poster trailer trailer""rating rating rating""awards awards awards""information information information""cast cast cast";
+    }
+    main div,
+main section {
+    margin-left: 0em;
+}
+
+}
+
+@media(max-width: 630px) {
+    .poster {
+        display: none;
+    }   
+    main {
+
+
+
+        grid-template-areas: "topBanner topBanner topBanner""title title title""trailer trailer trailer""rating rating rating""awards awards awards""information information information""cast cast cast";
+    }
+}
