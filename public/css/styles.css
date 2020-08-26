@@ -221,6 +221,10 @@ main {
     grid-area: poster;
 }
 
+.plot {
+    grid-area: plot;
+}
+
 .awards {
     grid-area: awards;
 }
@@ -263,12 +267,12 @@ main {
 }
 
 @media(max-width: 630px) {
-    .poster {
+    /* .poster {
         display: none;
-    }
+    } */
 
     main {
-        grid-template-areas: "topBanner topBanner topBanner""title title title""trailer trailer trailer""rating rating rating""awards awards awards""information information information""cast cast cast";
+        grid-template-areas: "topBanner topBanner topBanner""title title title""trailer trailer trailer" "rating rating rating" "poster plot plot" "awards awards awards""information information information""cast cast cast";
     }
 
     .ipc-button {
