@@ -307,4 +307,7 @@ main {
     #search {
         display: block;
     }
+    #desktopPlot {
+        display: none;
+    }
 }
