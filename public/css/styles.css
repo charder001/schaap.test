@@ -68,6 +68,12 @@ nav>* {
     display: none;
 }
 
+#signIn {
+    width: 70px;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
 .ipc-icon {
     position: relative;
     top: .4em;
