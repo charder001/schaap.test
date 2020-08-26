@@ -9,10 +9,11 @@ body {
 
 main {
     margin: 1em auto 1em auto;
-    max-width: 60em;
+    max-width: 70em;
 }
 
-main div, main section {
+main div,
+main section {
     margin-left: 1em;
 }
 
@@ -71,7 +72,14 @@ nav>* {
     display: block;
 }
 
-.trailer img, .poster img {
+.trailer img {
+    object-fit: cover;
+    height: 100%;
+}
+
+.trailer img,
+.poster img,
+.right img {
     width: 100%;
 }
 
@@ -79,6 +87,10 @@ nav>* {
 .block {
     background-color: #121212;
     padding: .5em;
+}
+
+.block-color {
+    background-color: #121212;
 }
 
 #information article {
@@ -101,11 +113,22 @@ main {
     grid-template-rows: auto 1fr;
     gap: 10px 0px;
     justify-self: center;
-    grid-template-areas: "title title title right""poster trailer trailer right""rating rating rating right""awards awards awards right""information information information right""cast cast cast right";
+    grid-template-areas: "topBanner topBanner topBanner right""title title title right""poster trailer trailer right""rating rating rating right""awards awards awards right""information information information right""cast cast cast right";
+}
+
+.topBanner {
+    grid-area: topBanner;
+    background-color: #121212;
+    padding: .5em;
+}
+
+#share {
+    text-align: right;
 }
 
 .title {
     grid-area: title;
+    margin-left: 0;
 }
 
 .trailer {

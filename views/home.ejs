@@ -73,10 +73,18 @@
   </nav>
 
   <main>
+    <div class="topBanner">
+      <a href="#">Full cast and crew</a><span> | </span>
+      <a href="#">Trivia</a><span> | </span>
+      <a href="#">User reviews</a><span> | </span>
+      <a href="#">IMDbPro</a><span> | </span>
+      <a href="#">More</a>
+      <a href="#" id="share">SHARE</a>
 
-    <div class="title">
-      <h1><%= movieInfo.Title %><span> (<%= movieInfo.Year %>)</span></h1>
-      <p><%= movieInfo.Ratings[0].Value %></p>
+      <div class="title">
+        <h1><%= movieInfo.Title %><span> (<%= movieInfo.Year %>)</span></h1>
+        <p><%= movieInfo.Ratings[0].Value %></p>
+      </div>
     </div>
     <div class="trailer">
       <img src="/img/trailerThumb.jpg" alt="<%= movieInfo.Title %> trailer thumbnail">
@@ -158,7 +166,14 @@
       <p><%= movieInfo.Actors %></p>
     </section>
 
-    <div class="right"></div>
+    <div class="right block">
+      <h2>Dwayne "The Rock" Johnson</h2>
+      <img src="/img/dwayneJohnson.jpg" alt="Dwayne Johnson">
+      <p>Dwayne Douglas Johnson, also known as The Rock, was born on May 2, 1972 in Hayward, California. He is the son
+        of Ata Johnson (born Feagaimaleata Fitisemanu Maivia) and professional wrestler Rocky Johnson (born Wayde
+        Douglas Bowles). His father, from Amherst, Nova Scotia, Canada, is black (of Black Nova Scotian descent), and
+        his mother is of Samoan... <a href="#"> See full bio »</a></p>
+    </div>
   </main>
   <script src="/js/main.js"></script>
 </body>
