@@ -181,6 +181,10 @@ nav>* {
     display: inline;
 }
 
+.hide {
+    display: none;
+}
+
 /* grid */
 
 main {
@@ -221,9 +225,7 @@ main {
     grid-area: poster;
 }
 
-.plot {
-    grid-area: plot;
-}
+
 
 .awards {
     grid-area: awards;
@@ -245,6 +247,7 @@ main {
     grid-area: right;
     margin-right: 1em;
 }
+
 
 
 @media(max-width: 860px) {
@@ -270,6 +273,11 @@ main {
     /* .poster {
         display: none;
     } */
+
+    .plot {
+        grid-area: plot;
+        display: block;
+    }
 
     main {
         grid-template-areas: "topBanner topBanner topBanner""title title title""trailer trailer trailer" "rating rating rating" "poster plot plot" "awards awards awards""information information information""cast cast cast";
