@@ -63,6 +63,11 @@ nav>* {
 
 }
 
+#search {
+    height: 1em;
+    display: none;
+}
+
 .ipc-icon {
     position: relative;
     top: .4em;
@@ -225,9 +230,32 @@ main section {
         display: none;
     }   
     main {
-
-
-
         grid-template-areas: "topBanner topBanner topBanner""title title title""trailer trailer trailer""rating rating rating""awards awards awards""information information information""cast cast cast";
+    }
+    .ipc-button {
+        display: none;
+    }
+    #watchList {
+        display: none;
+    }
+    nav {
+        justify-content: left;
+        margin-right: 0;
+    }
+    #home_img {
+        margin-right: 1em;
+    }
+    #search {
+        margin-left: auto;
+    }
+    #signIn {
+        margin: 0 1em 0 1em;
+    }
+nav input {
+    display: none;
+}
+
+    #search {
+        display: block;
     }
 }
