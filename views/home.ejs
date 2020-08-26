@@ -84,6 +84,7 @@
       <div class="title">
         <h1><%= movieInfo.Title %><span> (<%= movieInfo.Year %>)</span></h1>
         <p><%= movieInfo.Ratings[0].Value %></p>
+        <p><%= movieInfo.imdbVotes %></p>
       </div>
     </div>
     <div class="trailer">
@@ -95,12 +96,20 @@
 
     <section class="block rating">
       <h2>Rating</h2>
-      <p><%= movieInfo.Ratings[0].Source %></p>
-      <p><%= movieInfo.Ratings[0].Value %></p>
-      <p><%= movieInfo.Ratings[1].Source %></p>
-      <p><%= movieInfo.Ratings[1].Value %></p>
+      <section id="reviewSites">
+      <article class="reviewSite">
       <p><%= movieInfo.Ratings[2].Source %></p>
       <p><%= movieInfo.Ratings[2].Value %></p>
+    </article>
+    <article class="reviewSite">
+      <p><%= movieInfo.Ratings[1].Source %></p>
+      <p><%= movieInfo.Ratings[1].Value %></p>
+    </article>
+    <article class="reviewSite">
+      <p><%= movieInfo.Ratings[0].Source %></p>
+      <p><%= movieInfo.Ratings[0].Value %> | <%= movieInfo.imdbVotes %></p>
+    </article>
+  </section>
     </section>
 
     <section class="block awards">

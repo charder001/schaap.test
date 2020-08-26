@@ -84,6 +84,27 @@ nav>* {
 }
 
 
+#reviewSites{
+    display: flex;
+}
+
+
+
+.reviewSite {
+    margin-right: 1em;
+    padding-right: 1em;
+    border-right: 1px solid white;
+    height: 100%;
+}
+
+.reviewSite:last-of-type {
+    border-right: none;
+}
+
+.reviewSite p {
+    margin: 0;
+}
+
 .block {
     background-color: #121212;
     padding: .5em;
